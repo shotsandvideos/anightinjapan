@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="blog-post" >
+{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    <p class="readmore">Read More <img src="/assets/images/chevron.svg" alt=""></p>
+  </a> 
+{% endfor %}
+</div>
